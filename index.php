@@ -10,17 +10,28 @@
 </head>
 <body>
     
-    <form id="registrationform">
+    <form action="submit.php" method="post" id="registrationform">
         <h2>Student Info</h2>
-        <label for="name">Enter your name: </label>
-        <input type="text" id="name">
-        <small class="error-message" id="usernameError"></small>
-        <label for="roll">Roll Number: </label>
-        <input type="number" id="roll">
-        <label for="mobile">Mobile Number: </label>
-        <input type="text" id="mobile">
-        <label for="email">Email: </label>
-        <input type="email" id="email">
+        <div>
+            <label for="name">Enter your name: </label>
+            <input type="text" id="name">
+            <small class="error-message" id="usernameError"></small>
+        </div>
+        <div>
+            <label for="roll">Roll Number: </label>
+            <input type="number" id="roll">
+            <small class="error-message" id="rollnumError"></small>
+        </div>
+        <div>
+            <label for="mobile">Mobile Number: </label>
+            <input type="text" id="mobile">
+            <small class="error-message" id="mobilenumError"></small>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+            <small class="error-message" id="emailError"></small>
+        </div>
         <button type="submit">Submit</button>
     </form>
     <script src="./jquery_form_validation/lib/jquery.js"></script>
