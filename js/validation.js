@@ -16,7 +16,6 @@ function check(email){
 
 function validateForm(){
     //collect info
-    return true;
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const roll = document.getElementById("roll").value;
